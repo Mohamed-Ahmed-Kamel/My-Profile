@@ -164,7 +164,7 @@ nav ul li a:hover {
   width: 10em;
 }
 .skills-cards .card:hover {
-  border-radius: 50%;
+  border-radius: 20%;
   background-color: var(--bgColor-1);
   transform: scale(1.1);
 }

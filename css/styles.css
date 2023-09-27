@@ -1,10 +1,9 @@
 :root {
-  --primaryColor: #0c0c0c;
-  --secondaryColor: rgba(222, 177, 13, 0.867);
+  --primaryColor: #010101;
+  --secondaryColor: gold;
+  --backgroundColor: #000016;
   --lightColor: #fff;
   --bgColor-1: #171a1c;
-  --bgColor-2: #22282a;
-  --padding: 8%;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -25,12 +24,10 @@ body {
   color: var(--primaryColor);
   font-size: 1.8em;
   font-weight: 3;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   line-height: 50px;
   font-weight: bold;
 }
-
-/* Navbar */
 nav {
   background: #fff;
   padding: 0 50px;
@@ -77,7 +74,6 @@ nav ul li a:hover::before {
 nav ul li a:hover {
   color: white;
 }
-
 /* Label */
 .check-btn {
   font-size: 30px;
@@ -121,14 +117,14 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 .me-image img {
-  width: 35em;
+  width: 30em;
   transition: 0.4s ease;
 }
 .me-image img:hover {
   transform: scale(1.1);
 }
 .project-btn {
-  color: #fff;
+  color: var(--primaryColor);
   background-color: var(--secondaryColor);
   text-decoration: none;
   font-size: 1.1em;
@@ -158,6 +154,9 @@ nav ul li a:hover {
 }
 
 /* ******************** Skills cards Start ******************** */
+.skills-cards {
+  background: var(--backgroundColor);
+}
 .skills-cards .card {
   border: 1px solid #fff;
   background-color: var(--primaryColor);
@@ -166,6 +165,7 @@ nav ul li a:hover {
 .skills-cards .card:hover {
   border-radius: 20%;
   background-color: var(--bgColor-1);
+  box-shadow: 0 0px 13px gold;
   transform: scale(1.1);
 }
 .skills-content {
@@ -177,7 +177,7 @@ nav ul li a:hover {
 
 /* ******************** Project cards Start ******************** */
 .projects {
-  background-color: #000016;
+  background-color: var(--backgroundColor);
 }
 .projects .content {
   margin-top: 30px;
@@ -293,6 +293,9 @@ section {
   color: var(--secondaryColor);
   font-size: 1.2em;
   margin: 10px;
+}
+.ex-project {
+  border: 5px solid red;
 }
 
 /* ******************** Media ******************** */

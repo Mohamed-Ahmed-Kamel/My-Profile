@@ -3,7 +3,7 @@
   --secondaryColor: gold;
   --backgroundColor: #000016;
   --lightColor: #fff;
-  --bgColor-1: #171a1c;
+  --bgColor-1: rgba(255, 255, 255, 0.082);
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -182,6 +182,16 @@ nav ul li a:hover {
 .projects .content {
   margin-top: 30px;
 }
+.projects .content .lang {
+  padding: 7px;
+}
+.projects .content .lang span {
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: #f8f8f8;
+}
 .project-card {
   background-color: #fff;
   border-radius: 10px;
@@ -225,13 +235,14 @@ nav ul li a:hover {
 
 /* ********************  Contact Start ******************** */
 .contact .icon {
-  color: blue;
+  color: var(--lightColor);
   font-size: 4.5em;
 }
 .contact .info h3 {
-  color: #000;
+  color: var(--lightColor);
 }
 .contact .info p {
+  color: var(--lightColor);
   width: auto;
 }
 
@@ -270,7 +281,8 @@ section {
   flex-wrap: wrap;
 }
 .card {
-  background-color: #fff;
+  background-color: var(--backgroundColor);
+  color: var(--secondaryColor);
   width: 20em;
   /* box-shadow: 0 5px 25px rgba(255, 255, 255, 0.396); */
   border-radius: 10px;

@@ -3,6 +3,7 @@
   --secondaryColor: gold;
   --backgroundColor: #000016;
   --lightColor: #fff;
+  --tranLight: #ffffff1c;
   --bgColor-1: rgba(255, 255, 255, 0.082);
 }
 * {
@@ -155,17 +156,17 @@ nav ul li a:hover {
 
 /* ******************** Skills cards Start ******************** */
 .skills-cards {
-  background: var(--backgroundColor);
+  background: var(--primaryColor);
 }
 .skills-cards .card {
-  border: 1px solid #fff;
-  background-color: var(--primaryColor);
+/*  border: 1px solid #fff;*/
+  background-color: var(--backgroundColor);
   width: 10em;
 }
 .skills-cards .card:hover {
-  border-radius: 20%;
-  background-color: var(--bgColor-1);
-  box-shadow: 0 0px 13px gold;
+  border-radius: 15%;
+/*  background-color: var(--tranLight);*/
+  box-shadow: 0 0px 13px var(--tranLight);
   transform: scale(1.1);
 }
 .skills-content {
@@ -294,7 +295,7 @@ section {
   transform: scale(1.1);
 }
 .icon {
-  color: var(--secondaryColor);
+  color: var(--lightColor);
   font-size: 5em;
   text-align: center;
 }
@@ -302,7 +303,7 @@ section {
   text-align: center;
 }
 .info h3 {
-  color: var(--secondaryColor);
+  color: var(--lightColor);
   font-size: 1.2em;
   margin: 10px;
 }

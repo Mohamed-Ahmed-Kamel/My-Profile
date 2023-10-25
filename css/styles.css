@@ -307,9 +307,6 @@ section {
   font-size: 1.2em;
   margin: 10px;
 }
-.ex-project {
-  border: 5px solid red;
-}
 
 /* ******************** Media ******************** */
 @media (max-width: 1023px) {
